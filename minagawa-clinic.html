@@ -35,13 +35,13 @@
                 "@type": "MedicalClinic",
                 "name": "皆川クリニック",
                 "url": "https://minagawaclinic.main.jp/",
-                "telephone": "072-XXX-XXXX",
+                "telephone": "072-876-0766",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "○○町 0-0-0",
-                    "addressLocality": "○○市",
+                    "streetAddress": "北条１－５－３０",
+                    "addressLocality": "大東市",
                     "addressRegion": "大阪府",
-                    "postalCode": "000-0000",
+                    "postalCode": "574-0011",
                     "addressCountry": "JP"
                 },
                 "medicalSpecialty": ["内科", "消化器内科"],
@@ -53,10 +53,11 @@
                             "Tuesday",
                             "Wednesday",
                             "Thursday",
-                            "Friday"
+                            "Friday",
+                            "Saturday"
                         ],
                         "opens": "09:00",
-                        "closes": "12:00"
+                        "closes": "12:30"
                     },
                     {
                         "@type": "OpeningHoursSpecification",
@@ -67,14 +68,8 @@
                             "Thursday",
                             "Friday"
                         ],
-                        "opens": "15:00",
-                        "closes": "18:00"
-                    },
-                    {
-                        "@type": "OpeningHoursSpecification",
-                        "dayOfWeek": ["Saturday"],
-                        "opens": "09:00",
-                        "closes": "12:00"
+                        "opens": "16:00",
+                        "closes": "19:00"
                     }
                 ]
             }
@@ -969,13 +964,13 @@
 
             /* Table */
             .hours-table {
-                min-width: 480px;
                 width: 100%;
                 border-collapse: collapse;
+                table-layout: fixed;
             }
 
             .hours-table thead th {
-                padding: 0.75rem 0.625rem;
+                padding: 0.5rem 0.25rem;
                 font-family: 'DM Sans', sans-serif;
                 font-size: var(--fs-sm);
                 font-weight: 500;
@@ -987,8 +982,8 @@
 
             .hours-table thead th:first-child {
                 text-align: left;
-                padding-left: 1.5rem;
-                min-width: 120px;
+                padding-left: 0.875rem;
+                width: 5rem;
             }
 
             .hours-table thead th.sat {
@@ -1008,7 +1003,7 @@
             }
 
             .hours-table tbody td {
-                padding: 0.875rem 0.625rem;
+                padding: 0.5rem 0.25rem;
                 text-align: center;
                 font-size: var(--fs-sm);
                 vertical-align: middle;
@@ -1016,7 +1011,7 @@
 
             .session-label {
                 text-align: left !important;
-                padding-left: 1.5rem !important;
+                padding-left: 0.875rem !important;
             }
 
             .session-label .session-name {
@@ -1772,6 +1767,192 @@
                     width: auto;
                 }
             }
+
+            /* ============================================================
+       19. FOOTER
+    ============================================================ */
+            #site-footer {
+                background-color: var(--text);
+                padding-block: 3.5rem 2.5rem;
+                padding-bottom: 7rem; /* mobile: clear sticky bar */
+            }
+
+            .footer-inner {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                padding-bottom: 2.5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            }
+
+            /* Brand column */
+            .footer-logo {
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .footer-logo-name {
+                display: block;
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 700;
+                color: var(--white);
+                line-height: 1.3;
+                transition: color 0.2s ease;
+            }
+
+            .footer-logo:hover .footer-logo-name {
+                color: var(--primary-light);
+            }
+
+            .footer-logo-specialty {
+                display: block;
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.55);
+                margin-top: 0.2rem;
+            }
+
+            .footer-address {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.55);
+                line-height: 1.8;
+                margin-top: 1rem;
+                font-style: normal;
+            }
+
+            /* Nav column */
+            .footer-nav ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                margin-top: 0.25rem;
+            }
+
+            .footer-nav a {
+                font-size: var(--fs-sm);
+                color: rgba(255, 255, 255, 0.75);
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            .footer-nav a:hover {
+                color: var(--white);
+            }
+
+            /* Contact column */
+            .footer-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-tel-label {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.55);
+                margin-bottom: 0.25rem;
+            }
+
+            .footer-tel {
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xl);
+                font-weight: 700;
+                color: var(--accent);
+                text-decoration: none;
+                line-height: 1.2;
+                transition: color 0.2s ease;
+            }
+
+            .footer-tel:hover {
+                color: var(--accent-hover);
+            }
+
+            .footer-hours-note {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.5);
+                margin-block: 0.4rem 1rem;
+            }
+
+            /* Footer bottom bar */
+            .footer-bottom {
+                padding-top: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .footer-bottom small {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.4);
+            }
+
+            @media (min-width: 769px) {
+                #site-footer {
+                    padding-bottom: 2.5rem; /* no sticky bar on desktop */
+                }
+
+                .footer-inner {
+                    grid-template-columns: 1.4fr 1fr 1.4fr;
+                    gap: 2.5rem 3rem;
+                }
+            }
+
+            /* ============================================================
+       20. STICKY BAR
+    ============================================================ */
+            .sticky-bar {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                border-top: 1px solid var(--border);
+                box-shadow: 0 -4px 16px rgba(44, 62, 64, 0.08);
+                padding: 0.75rem 1rem;
+                padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+                display: flex;
+                gap: 0.75rem;
+                z-index: 900;
+            }
+
+            .sticky-phone {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                background-color: var(--primary-lighter);
+                border-radius: var(--radius-full);
+                padding: 0.75rem;
+                color: var(--primary);
+                font-size: var(--fs-sm);
+                font-weight: 600;
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+                white-space: nowrap;
+            }
+
+            .sticky-phone:hover {
+                background-color: #d4eaf0;
+            }
+
+            .sticky-phone svg {
+                width: 16px;
+                height: 16px;
+                stroke: var(--primary);
+                flex-shrink: 0;
+            }
+
+            .sticky-book {
+                flex: 1;
+                justify-content: center;
+            }
+
+            @media (min-width: 769px) {
+                .sticky-bar {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
@@ -1800,9 +1981,9 @@
                         <li><a href="#access">アクセス</a></li>
                     </ul>
                     <a
-                        href="tel:072-XXX-XXXX"
+                        href="tel:072-876-0766"
                         class="header-phone"
-                        aria-label="電話番号 072-XXX-XXXX"
+                        aria-label="電話番号 072-876-0766"
                     >
                         <!-- Phone icon -->
                         <svg
@@ -1819,7 +2000,7 @@
                                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
                             />
                         </svg>
-                        072-XXX-XXXX
+                        072-876-0766
                     </a>
                     <a
                         href="#"
@@ -1884,9 +2065,9 @@
             </nav>
 
             <a
-                href="tel:072-XXX-XXXX"
+                href="tel:072-876-0766"
                 class="mobile-menu-phone"
-                aria-label="電話番号 072-XXX-XXXX"
+                aria-label="電話番号 072-876-0766"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1902,7 +2083,7 @@
                         d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
                     />
                 </svg>
-                072-XXX-XXXX
+                072-876-0766
             </a>
 
             <a href="#" class="btn-primary" aria-label="WEB予約ページへ">
@@ -1976,9 +2157,9 @@
                             </svg>
                         </a>
                         <a
-                            href="tel:072-XXX-XXXX"
+                            href="tel:072-876-0766"
                             class="btn-secondary"
-                            aria-label="電話番号 072-XXX-XXXX に電話する"
+                            aria-label="電話番号 072-876-0766 に電話する"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -1994,7 +2175,7 @@
                                     d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
                                 />
                             </svg>
-                            072-XXX-XXXX
+                            072-876-0766
                         </a>
                     </div>
                 </div>
@@ -2047,14 +2228,14 @@
                     <div class="hours-card-header">
                         <p class="hours-card-header-text">ご予約・お問い合わせ</p>
                         <a
-                            href="tel:072-XXX-XXXX"
+                            href="tel:072-876-0766"
                             class="hours-phone-btn"
-                            aria-label="電話番号 072-XXX-XXXX に電話する"
+                            aria-label="電話番号 072-876-0766 に電話する"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
                             </svg>
-                            <span class="hours-phone-number">072-XXX-XXXX</span>
+                            <span class="hours-phone-number">072-876-0766</span>
                         </a>
                     </div>
 
@@ -2075,14 +2256,14 @@
                                     <th scope="col">木</th>
                                     <th scope="col">金</th>
                                     <th scope="col" class="sat">土</th>
-                                    <th scope="col" class="sun">日・祝</th>
+                                    <th scope="col" class="sun">日<span class="hidden-sp">・祝</span></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td class="session-label">
                                         <span class="session-name">午前</span>
-                                        <span class="session-time">9:00〜12:00</span>
+                                        <span class="session-time">9:00〜12:30</span>
                                     </td>
                                     <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
                                     <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
@@ -2095,7 +2276,7 @@
                                 <tr>
                                     <td class="session-label">
                                         <span class="session-name">午後</span>
-                                        <span class="session-time">15:00〜18:00</span>
+                                        <span class="session-time">16:00〜19:00</span>
                                     </td>
                                     <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
                                     <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
@@ -2110,7 +2291,8 @@
                     </div>
 
                     <p class="hours-note">
-                        ※ 受付は終了30分前までとなります。診療時間・休診日は変更になる場合がありますので、事前にお電話でご確認ください。
+                        <strong>受付時間：</strong>午前 8:30〜12:30　／　午後 15:30〜19:00<br>
+                        ※ 診療時間・休診日は変更になる場合がありますので、事前にお電話でご確認ください。
                     </p>
 
                 </div>
@@ -2329,11 +2511,11 @@
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
                         </a>
-                        <a href="tel:072-XXX-XXXX" class="btn-on-dark">
+                        <a href="tel:072-876-0766" class="btn-on-dark">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                             </svg>
-                            072-XXX-XXXX
+                            072-876-0766
                         </a>
                     </div>
 
@@ -2423,13 +2605,13 @@
                     <!-- Left: info -->
                     <div class="access-info">
 
-                        <a href="tel:072-XXX-XXXX" class="access-phone" aria-label="電話番号 072-XXX-XXXX に電話する">
+                        <a href="tel:072-876-0766" class="access-phone" aria-label="電話番号 072-876-0766 に電話する">
                             <svg class="access-phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                             </svg>
                             <div class="access-phone-text">
                                 <span class="access-phone-label">お電話でのご予約・お問い合わせ</span>
-                                <span class="access-phone-number">072-XXX-XXXX</span>
+                                <span class="access-phone-number">072-876-0766</span>
                             </div>
                         </a>
 
@@ -2437,8 +2619,8 @@
                             <div class="access-row">
                                 <dt>住所</dt>
                                 <dd>
-                                    <span class="access-postal">〒000-0000</span><br>
-                                    大阪府 ○○市 ○○町 0-0-0
+                                    <span class="access-postal">〒574-0011</span><br>
+                                    大阪府大東市北条１－５－３０
                                 </dd>
                             </div>
                             <div class="access-row">
@@ -2481,15 +2663,90 @@
             </div>
         </section>
 
-        <!-- Remaining sections added here step by step -->
+        <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+        <footer id="site-footer" aria-label="サイトフッター">
+            <div class="container">
+                <div class="footer-inner">
+
+                    <!-- Col 1: Brand -->
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo" aria-label="皆川クリニック トップページへ">
+                            <span class="footer-logo-name">皆川クリニック</span>
+                            <span class="footer-logo-specialty">内科・消化器内科</span>
+                        </a>
+                        <address class="footer-address">
+                            〒574-0011<br>
+                            大阪府大東市北条１－５－３０
+                        </address>
+                    </div>
+
+                    <!-- Col 2: Nav -->
+                    <nav class="footer-nav" aria-label="フッターナビゲーション">
+                        <ul>
+                            <li><a href="#services">診療案内</a></li>
+                            <li><a href="#hours">診療時間</a></li>
+                            <li><a href="#news">お知らせ</a></li>
+                            <li><a href="#message">院長ご挨拶</a></li>
+                            <li><a href="#features">当院の特徴</a></li>
+                            <li><a href="#access">アクセス</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Col 3: Contact -->
+                    <div class="footer-contact">
+                        <p class="footer-tel-label">お電話でのご予約</p>
+                        <a href="tel:072-876-0766" class="footer-tel" aria-label="電話番号 072-876-0766 に電話する">072-876-0766</a>
+                        <p class="footer-hours-note">受付時間：診療時間に準ずる</p>
+                        <a href="#" class="btn-primary">
+                            WEB予約はこちら
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <small>&copy; 2026 皆川クリニック. All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ============================================================
+       STICKY BAR (mobile only)
+  ============================================================ -->
+        <div class="sticky-bar" aria-label="クイックアクセス" role="navigation">
+            <a href="tel:072-876-0766" class="sticky-phone" aria-label="電話番号 072-876-0766 に電話する">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>072-876-0766</span>
+            </a>
+            <a href="#" class="btn-primary sticky-book">
+                WEB予約はこちら
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
 
         <script>
             // ============================================================
             // SCROLL REVEAL — IntersectionObserver
-            // Watches all .reveal elements and adds .visible when they
-            // enter the viewport. Also handles .stagger children.
+            // Applies stagger delays to children of .stagger, then
+            // observes all .reveal elements, adding .visible on entry.
             // ============================================================
             (function () {
+                // Apply transition-delay to stagger children before observing
+                document.querySelectorAll('.stagger').forEach((parent) => {
+                    parent.querySelectorAll('.reveal').forEach((child, i) => {
+                        child.style.transitionDelay = `${i * 0.08}s`;
+                    });
+                });
+
                 const observer = new IntersectionObserver(
                     (entries) => {
                         entries.forEach((entry) => {
@@ -2508,19 +2765,65 @@
             })();
 
             // ============================================================
-            // STEP 12 — HEADER: Scroll shadow
-            // Add/remove .scrolled class on #site-header based on
-            // window.scrollY. Attach a scroll event listener here.
+            // HEADER: Scroll shadow
             // ============================================================
+            (function () {
+                const header = document.getElementById('site-header');
+                window.addEventListener(
+                    'scroll',
+                    () => {
+                        header.classList.toggle('scrolled', window.scrollY > 10);
+                    },
+                    { passive: true }
+                );
+            })();
 
             // ============================================================
-            // STEP 12 — HEADER: Hamburger / mobile menu toggle
-            // Wire up .hamburger button and .mobile-menu-close button.
-            // Toggle .open on both .hamburger and #mobile-menu,
-            // toggle aria-expanded on button, toggle hidden attr on menu,
-            // handle Escape key to close + return focus to hamburger,
-            // prevent body scroll while menu is open (overflow: hidden).
+            // HEADER: Mobile menu toggle
             // ============================================================
+            (function () {
+                const hamburger = document.querySelector('.hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const closeBtn = document.querySelector('.mobile-menu-close');
+
+                if (!hamburger || !mobileMenu) return;
+
+                function openMenu() {
+                    hamburger.classList.add('open');
+                    hamburger.setAttribute('aria-expanded', 'true');
+                    mobileMenu.removeAttribute('hidden');
+                    mobileMenu.classList.add('open');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeMenu() {
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    mobileMenu.setAttribute('hidden', '');
+                    mobileMenu.classList.remove('open');
+                    document.body.style.overflow = '';
+                    hamburger.focus();
+                }
+
+                hamburger.addEventListener('click', () => {
+                    hamburger.getAttribute('aria-expanded') === 'true'
+                        ? closeMenu()
+                        : openMenu();
+                });
+
+                if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                        closeMenu();
+                    }
+                });
+
+                // Close menu when a nav link is tapped
+                mobileMenu.querySelectorAll('a').forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+            })();
         </script>
     </body>
 </html>
