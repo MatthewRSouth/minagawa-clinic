@@ -1,3 +1,9 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+---
+
 # Minagawa Clinic — Design System & Implementation Guide
 
 Use this file as context when working on the 皆川クリニック (Minagawa Clinic) website. It documents every design decision, token, and pattern so changes stay consistent.
@@ -12,6 +18,31 @@ Use this file as context when working on the 皆川クリニック (Minagawa Cli
 - **Current site:** http://minagawaclinic.main.jp/ — HTML frames from ~2000. This redesign is a complete replacement.
 - **Stack:** Single-file HTML, vanilla CSS (custom properties), vanilla JS. No frameworks. Google Fonts CDN only.
 - **Source file:** `minagawa-clinic.html`
+
+---
+
+## Development Workflow
+
+There is no build system. Open the file directly in a browser:
+
+```bash
+open minagawa-clinic.html        # macOS
+# or serve locally to avoid CORS issues with fonts:
+npx serve .                       # then open http://localhost:3000
+python3 -m http.server 3000       # alternative
+```
+
+There are no linting, testing, or compilation steps. All CSS and JS live inside `<style>` and `<script>` tags in `minagawa-clinic.html`. The Google Fonts CDN link requires an internet connection — offline, fonts fall back to system sans-serif.
+
+---
+
+## Code Organization Inside `minagawa-clinic.html`
+
+The single file is structured in this order:
+1. `<head>` — charset, viewport, Google Fonts (`Zen Maru Gothic`, `Noto Sans JP`, `DM Sans`), inline `<style>`
+2. `<style>` block — `:root` custom properties → reset → base → component classes → section-specific styles → responsive breakpoints → animations
+3. `<body>` — sections in page order: `<header>` → `#hero` → `#hours` → `#news` → `#message` → `#services` → `.cta-banner` → `#features` → `#access` → `<footer>` → `.sticky-bar`
+4. `<script>` block at end of body — IntersectionObserver (scroll reveal + stagger), mobile menu toggle, header scroll shadow
 
 ---
 
@@ -381,6 +412,52 @@ If the client wants a multi-page site later, extract to this structure:
 └── assets/
     └── images/            ← Clinic photos, doctor photo
 ```
+
+---
+
+## Workflow Rules
+
+### Plan Before Building
+Before writing any code, output a short implementation plan:
+1. Which section you're building
+2. Which design tokens and component patterns from this file apply
+3. Any responsive behavior needed
+4. Expected HTML structure
+
+Wait for approval before writing code.
+
+### Build Section by Section
+Do NOT build the entire page in one pass. Build one section at a time in page order:
+1. Head + base styles + CSS custom properties
+2. Header + navigation
+3. Hero
+4. Hours
+5. News
+6. Message
+7. Services
+8. CTA Banner
+9. Features
+10. Access
+11. Footer + sticky bar
+12. Script block (observers, menu, scroll)
+
+After each section, stop and run checks before moving on.
+
+### Checks After Each Section
+After completing each section:
+1. **Visual check** — Open the file in the browser and take a screenshot. Compare against the design intent described in this file.
+2. **Accessibility** — Verify semantic HTML, aria attributes, color contrast, and tap target sizes per the Accessibility Checklist in this file.
+3. Report what you found before proceeding to the next section.
+
+### SEO Essentials
+Include in the `<head>`:
+- Descriptive `<title>` in Japanese with clinic name and specialty
+- `<meta name="description">` — clinic summary in Japanese, under 160 chars
+- `<meta name="viewport">` (already specified)
+- `<link rel="canonical">`
+- Open Graph tags (og:title, og:description, og:type, og:url, og:image)
+- Structured data: JSON-LD `LocalBusiness` schema with address, phone, hours, medical specialty
+- `lang="ja"` on the `<html>` tag
 
 ---
 
