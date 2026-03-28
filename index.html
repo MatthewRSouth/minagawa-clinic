@@ -1,0 +1,2829 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>皆川クリニック｜内科・消化器内科｜大阪府</title>
+        <meta
+            name="description"
+            content="大阪府の皆川クリニックは、内科・消化器内科を専門とする地域のかかりつけ医です。お気軽にご相談ください。診療時間・アクセスはこちら。"
+        />
+        <link rel="canonical" href="https://minagawaclinic.main.jp/" />
+
+        <!-- Open Graph -->
+        <meta
+            property="og:title"
+            content="皆川クリニック｜内科・消化器内科｜大阪府"
+        />
+        <meta
+            property="og:description"
+            content="大阪府の皆川クリニックは、内科・消化器内科を専門とする地域のかかりつけ医です。お気軽にご相談ください。"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://minagawaclinic.main.jp/" />
+        <meta
+            property="og:image"
+            content="https://minagawaclinic.main.jp/assets/ogp.jpg"
+        />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:site_name" content="皆川クリニック" />
+
+        <!-- JSON-LD: LocalBusiness / MedicalClinic -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "MedicalClinic",
+                "name": "皆川クリニック",
+                "url": "https://minagawaclinic.main.jp/",
+                "telephone": "072-876-0766",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "北条１－５－３０",
+                    "addressLocality": "大東市",
+                    "addressRegion": "大阪府",
+                    "postalCode": "574-0011",
+                    "addressCountry": "JP"
+                },
+                "medicalSpecialty": ["内科", "消化器内科"],
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday"
+                        ],
+                        "opens": "09:00",
+                        "closes": "12:30"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday"
+                        ],
+                        "opens": "16:00",
+                        "closes": "19:00"
+                    }
+                ]
+            }
+        </script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            /* ============================================================
+       1. CSS CUSTOM PROPERTIES
+    ============================================================ */
+            :root {
+                /* Primary — Calming Teal */
+                --primary: #3b8ea5;
+                --primary-light: #5aabbf;
+                --primary-lighter: #e8f4f8;
+                --primary-dark: #2d7a90;
+                --primary-deep: #1b5e73;
+
+                /* Accent — Warm Terracotta (CTA buttons ONLY) */
+                --accent: #d4845a;
+                --accent-hover: #c07248;
+                --accent-light: #f5e6dc;
+
+                /* Neutrals */
+                --white: #ffffff;
+                --warm-white: #fafbf9;
+                --cream: #f6f5f0;
+                --sand: #ede9e0;
+                --text: #2c3e40;
+                --text-light: #5a6e72;
+                --text-muted: #8fa3a8;
+                --border: #e2e8e4;
+                --border-light: #eff2ee;
+
+                /* Semantic */
+                --open: #3b8ea5;
+                --closed: #c7a08a;
+                --afternoon: #7bb5a3;
+                --danger: #c4756e;
+
+                /* Type Scale */
+                --fs-xs: 0.75rem;
+                --fs-sm: 0.8125rem;
+                --fs-base: 0.9375rem;
+                --fs-md: 1.0625rem;
+                --fs-lg: 1.25rem;
+                --fs-xl: 1.5rem;
+                --fs-2xl: clamp(1.5rem, 3.5vw, 2rem);
+                --fs-3xl: clamp(1.75rem, 4.5vw, 2.625rem);
+                --fs-hero: clamp(1.875rem, 5.5vw, 3.25rem);
+
+                /* Spacing */
+                --section-pad: clamp(3.5rem, 8vw, 7rem);
+                --container: min(90%, 1120px);
+
+                /* Border Radius */
+                --radius-sm: 6px;
+                --radius: 10px;
+                --radius-lg: 16px;
+                --radius-xl: 24px;
+                --radius-full: 999px;
+
+                /* Shadows */
+                --shadow-sm: 0 1px 3px rgba(44, 62, 64, 0.06);
+                --shadow: 0 4px 20px rgba(44, 62, 64, 0.08);
+                --shadow-lg: 0 12px 40px rgba(44, 62, 64, 0.12);
+                --shadow-accent: 0 8px 30px rgba(212, 132, 90, 0.25);
+            }
+
+            /* ============================================================
+       2. RESET
+    ============================================================ */
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* ============================================================
+       3. BASE
+    ============================================================ */
+            html {
+                scroll-behavior: smooth;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            body {
+                font-family:
+                    'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+                font-size: var(--fs-base);
+                font-weight: 400;
+                color: var(--text);
+                background-color: var(--warm-white);
+                line-height: 1.8;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            img {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+
+            a {
+                color: var(--primary);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--primary-dark);
+            }
+
+            ul,
+            ol {
+                list-style: none;
+            }
+
+            /* ============================================================
+       4. TYPOGRAPHY — HEADINGS
+    ============================================================ */
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-weight: 700;
+                color: var(--text);
+                line-height: 1.4;
+            }
+
+            /* ============================================================
+       5. UTILITIES
+    ============================================================ */
+
+            .container {
+                width: var(--container);
+                margin-inline: auto;
+            }
+
+            /* Section header pattern */
+            .section-label {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                font-weight: 600;
+                color: var(--primary);
+                text-transform: uppercase;
+                letter-spacing: 0.12em;
+                margin-bottom: 0.5rem;
+            }
+
+            .section-label::before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 2px;
+                background-color: var(--primary);
+                border-radius: 2px;
+                flex-shrink: 0;
+            }
+
+            .section-title {
+                font-size: var(--fs-3xl);
+                line-height: 1.35;
+                color: var(--text);
+                margin-bottom: 0.75rem;
+            }
+
+            .section-subtitle {
+                font-size: var(--fs-base);
+                color: var(--text-light);
+                line-height: 1.8;
+                max-width: 56ch;
+            }
+
+            /* Scroll reveal */
+            .reveal {
+                opacity: 0;
+                transform: translateY(28px);
+                transition:
+                    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .reveal.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* Stagger delays — up to 6 children */
+            .stagger > *:nth-child(1) {
+                transition-delay: 0s;
+            }
+            .stagger > *:nth-child(2) {
+                transition-delay: 0.08s;
+            }
+            .stagger > *:nth-child(3) {
+                transition-delay: 0.16s;
+            }
+            .stagger > *:nth-child(4) {
+                transition-delay: 0.24s;
+            }
+            .stagger > *:nth-child(5) {
+                transition-delay: 0.32s;
+            }
+            .stagger > *:nth-child(6) {
+                transition-delay: 0.4s;
+            }
+
+            /* Hide line breaks on mobile, show on 640px+ */
+            .hidden-sp {
+                display: none;
+            }
+
+            @media (min-width: 640px) {
+                .hidden-sp {
+                    display: inline;
+                }
+            }
+
+            /* Focus visible — all interactive elements */
+            :focus-visible {
+                outline: 2px solid var(--primary);
+                outline-offset: 3px;
+                border-radius: var(--radius-sm);
+            }
+
+            /* ============================================================
+       6. COMPONENT — BUTTONS
+    ============================================================ */
+
+            .btn-primary,
+            .btn-secondary {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.875rem 1.75rem;
+                border-radius: var(--radius-full);
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-base);
+                font-weight: 600;
+                line-height: 1.2;
+                cursor: pointer;
+                border: none;
+                text-decoration: none;
+                transition:
+                    background-color 0.2s ease,
+                    color 0.2s ease,
+                    border-color 0.2s ease,
+                    box-shadow 0.2s ease,
+                    transform 0.2s ease;
+                white-space: nowrap;
+            }
+
+            /* Primary CTA — terracotta pill */
+            .btn-primary {
+                background-color: var(--accent);
+                color: var(--white);
+                box-shadow: var(--shadow-accent);
+            }
+
+            .btn-primary:hover,
+            .btn-primary:focus-visible {
+                background-color: var(--accent-hover);
+                color: var(--white);
+                transform: translateY(-1px);
+                box-shadow: 0 12px 36px rgba(212, 132, 90, 0.35);
+            }
+
+            .btn-primary svg {
+                width: 16px;
+                height: 16px;
+                flex-shrink: 0;
+                transition: transform 0.2s ease;
+            }
+
+            .btn-primary:hover svg,
+            .btn-primary:focus-visible svg {
+                transform: translateX(3px);
+            }
+
+            /* Secondary — white bordered pill */
+            .btn-secondary {
+                background-color: var(--white);
+                color: var(--primary-dark);
+                border: 1.5px solid var(--border);
+            }
+
+            .btn-secondary:hover,
+            .btn-secondary:focus-visible {
+                background-color: var(--primary-lighter);
+                border-color: var(--primary);
+                color: var(--primary-dark);
+                transform: translateY(-1px);
+            }
+
+            .btn-secondary svg {
+                width: 16px;
+                height: 16px;
+                flex-shrink: 0;
+                transition: transform 0.2s ease;
+            }
+
+            .btn-secondary:hover svg,
+            .btn-secondary:focus-visible svg {
+                transform: translateX(3px);
+            }
+
+            /* ============================================================
+       7. COMPONENT — CARDS
+    ============================================================ */
+            .card {
+                background: var(--white);
+                border: 1px solid var(--border-light);
+                border-radius: var(--radius-lg);
+                transition:
+                    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                    border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-lg);
+                border-color: var(--primary-lighter);
+            }
+
+            /* ============================================================
+       8. COMPONENT — HOURS TABLE DOTS
+    ============================================================ */
+            .dot-open,
+            .dot-closed {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .dot-open::before {
+                content: '';
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color: var(--open);
+                border-radius: 50%;
+            }
+
+            .dot-closed::before {
+                content: '—';
+                color: var(--closed);
+                font-size: var(--fs-sm);
+                font-weight: 500;
+            }
+
+            /* ============================================================
+       9. KEYFRAMES
+    ============================================================ */
+            @keyframes pulse-dot {
+                0%,
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+                50% {
+                    transform: scale(1.4);
+                    opacity: 0.6;
+                }
+            }
+
+            /* ============================================================
+       10. HEADER + NAVIGATION
+    ============================================================ */
+            #site-header {
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                background-color: var(--white);
+                border-bottom: 1px solid var(--border-light);
+                transition: box-shadow 0.3s ease;
+            }
+
+            #site-header.scrolled {
+                box-shadow: var(--shadow-sm);
+            }
+
+            .header-inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 64px;
+            }
+
+            /* Logo */
+            .header-logo {
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+                text-decoration: none;
+                flex-shrink: 0;
+            }
+
+            .logo-name {
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 700;
+                color: var(--text);
+                line-height: 1.2;
+                letter-spacing: 0.02em;
+            }
+
+            .logo-specialty {
+                font-size: var(--fs-xs);
+                font-weight: 400;
+                color: var(--text-muted);
+                letter-spacing: 0.05em;
+            }
+
+            /* Desktop nav — hidden on mobile */
+            .header-nav {
+                display: none;
+            }
+
+            @media (min-width: 769px) {
+                .header-inner {
+                    height: 72px;
+                }
+
+                .header-nav {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.25rem;
+                }
+
+                .nav-links {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.125rem;
+                    margin-right: 1.25rem;
+                }
+
+                .nav-links a {
+                    display: block;
+                    padding: 0.5rem 0.75rem;
+                    border-radius: var(--radius);
+                    font-size: var(--fs-sm);
+                    font-weight: 500;
+                    color: var(--text-light);
+                    transition:
+                        background-color 0.2s ease,
+                        color 0.2s ease;
+                    white-space: nowrap;
+                }
+
+                .nav-links a:hover,
+                .nav-links a:focus-visible {
+                    background-color: var(--primary-lighter);
+                    color: var(--primary);
+                }
+
+                .header-phone {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.375rem;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: var(--fs-sm);
+                    font-weight: 600;
+                    color: var(--text-light);
+                    text-decoration: none;
+                    margin-right: 1rem;
+                    transition: color 0.2s ease;
+                    white-space: nowrap;
+                }
+
+                .header-phone:hover {
+                    color: var(--primary);
+                }
+
+                .header-phone svg {
+                    width: 14px;
+                    height: 14px;
+                    flex-shrink: 0;
+                    color: var(--primary);
+                }
+
+                /* Compact CTA in header */
+                .header-nav .btn-primary {
+                    padding: 0.625rem 1.25rem;
+                    font-size: var(--fs-sm);
+                }
+            }
+
+            /* Hamburger button — visible only on mobile */
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                width: 44px;
+                height: 44px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 0;
+                border-radius: var(--radius);
+                flex-shrink: 0;
+                transition: background-color 0.2s ease;
+            }
+
+            .hamburger:hover {
+                background-color: var(--primary-lighter);
+            }
+
+            .hamburger span {
+                display: block;
+                width: 22px;
+                height: 2px;
+                background-color: var(--text);
+                border-radius: 2px;
+                transition:
+                    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                    opacity 0.3s ease;
+                transform-origin: center;
+            }
+
+            /* Hamburger → × when open */
+            .hamburger.open span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .hamburger.open span:nth-child(2) {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            .hamburger.open span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+
+            @media (min-width: 769px) {
+                .hamburger {
+                    display: none;
+                }
+            }
+
+            /* Mobile menu overlay */
+            .mobile-menu {
+                position: fixed;
+                inset: 0;
+                z-index: 200;
+                background: linear-gradient(
+                    160deg,
+                    var(--primary-deep) 0%,
+                    var(--primary) 100%
+                );
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0;
+                transform: translateX(100%);
+                transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+                overflow-y: auto;
+                padding: 5rem 2rem 3rem;
+            }
+
+            .mobile-menu.open {
+                transform: translateX(0);
+            }
+
+            @media (min-width: 769px) {
+                .mobile-menu {
+                    display: none;
+                }
+            }
+
+            .mobile-menu-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                background: rgba(255, 255, 255, 0.15);
+                border: none;
+                border-radius: var(--radius-full);
+                cursor: pointer;
+                color: var(--white);
+                font-size: 1.25rem;
+                line-height: 1;
+                transition: background-color 0.2s ease;
+            }
+
+            .mobile-menu-close:hover {
+                background: rgba(255, 255, 255, 0.25);
+            }
+
+            .mobile-nav-links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.25rem;
+                width: 100%;
+                max-width: 320px;
+                margin-bottom: 2rem;
+            }
+
+            .mobile-nav-links a {
+                display: block;
+                width: 100%;
+                padding: 1rem 1.5rem;
+                border-radius: var(--radius);
+                font-size: var(--fs-md);
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.9);
+                text-align: center;
+                transition:
+                    background-color 0.2s ease,
+                    color 0.2s ease;
+            }
+
+            .mobile-nav-links a:hover,
+            .mobile-nav-links a:focus-visible {
+                background-color: rgba(255, 255, 255, 0.15);
+                color: var(--white);
+            }
+
+            .mobile-menu-phone {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 600;
+                color: var(--white);
+                text-decoration: none;
+                margin-bottom: 1.5rem;
+                padding: 0.75rem 1.5rem;
+                border: 1.5px solid rgba(255, 255, 255, 0.4);
+                border-radius: var(--radius-full);
+                transition:
+                    background-color 0.2s ease,
+                    border-color 0.2s ease;
+            }
+
+            .mobile-menu-phone:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                border-color: rgba(255, 255, 255, 0.7);
+                color: var(--white);
+            }
+
+            .mobile-menu-phone svg {
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+            }
+            /* ============================================================
+       11. HERO
+    ============================================================ */
+            #hero {
+                padding-block: var(--section-pad);
+                background: linear-gradient(
+                    160deg,
+                    #eef7fb 0%,
+                    #f3f9fb 50%,
+                    var(--warm-white) 100%
+                );
+                overflow: hidden;
+            }
+
+            .hero-inner {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+            }
+
+            @media (min-width: 960px) {
+                .hero-inner {
+                    display: grid;
+                    grid-template-columns: 1fr 0.8fr;
+                    gap: 3rem;
+                    align-items: center;
+                }
+            }
+
+            /* Eyebrow badge */
+            .hero-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.375rem 0.875rem;
+                background: var(--white);
+                border: 1px solid var(--border);
+                border-radius: var(--radius-full);
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                font-weight: 400;
+                color: var(--text-muted);
+                letter-spacing: 0.04em;
+                margin-bottom: 1rem;
+            }
+
+            .hero-badge-dot {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background-color: var(--primary);
+                border-radius: 50%;
+                flex-shrink: 0;
+                animation: pulse-dot 2s ease-in-out infinite;
+            }
+
+            /* Headline */
+            .hero-headline {
+                font-size: var(--fs-hero);
+                line-height: 1.35;
+                color: var(--text);
+                margin-bottom: 1rem;
+                letter-spacing: 0.01em;
+            }
+
+            /* Subtitle */
+            .hero-subtitle {
+                font-size: var(--fs-md);
+                color: var(--text-light);
+                line-height: 1.9;
+                margin-bottom: 1.5rem;
+            }
+
+            /* Specialty tags */
+            .hero-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero-tag {
+                display: inline-block;
+                padding: 0.25rem 0.75rem;
+                background-color: var(--primary-lighter);
+                color: var(--primary);
+                border-radius: var(--radius-sm);
+                font-size: var(--fs-xs);
+                font-weight: 500;
+                letter-spacing: 0.04em;
+            }
+
+            /* CTA row */
+            .hero-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            /* Image frame */
+            .hero-image-frame {
+                border-radius: var(--radius-xl);
+                overflow: hidden;
+                aspect-ratio: 4 / 3;
+                background-color: var(--primary-lighter);
+                box-shadow: var(--shadow);
+            }
+
+            @media (min-width: 960px) {
+                .hero-image-frame {
+                    aspect-ratio: auto;
+                    height: 440px;
+                }
+            }
+
+            .hero-image-placeholder {
+                width: 100%;
+                height: 100%;
+                min-height: 240px;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-lighter) 0%,
+                    #d0eaf2 100%
+                );
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.75rem;
+                color: var(--primary);
+            }
+
+            .hero-image-placeholder svg {
+                width: 48px;
+                height: 48px;
+                opacity: 0.5;
+            }
+
+            .hero-image-placeholder span {
+                font-size: var(--fs-sm);
+                color: var(--text-muted);
+                letter-spacing: 0.05em;
+            }
+
+            /* ============================================================
+       12. HOURS
+    ============================================================ */
+            #hours {
+                padding-block: var(--section-pad);
+                background-color: var(--warm-white);
+            }
+
+            .hours-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .hours-card {
+                background: var(--white);
+                border: 1px solid var(--border);
+                border-radius: var(--radius-xl);
+                box-shadow: var(--shadow);
+                overflow: hidden;
+                max-width: 700px;
+                margin-inline: auto;
+            }
+
+            /* Card header strip */
+            .hours-card-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                padding: 1.125rem 1.5rem;
+                background-color: var(--primary-lighter);
+                border-bottom: 1px solid var(--border-light);
+            }
+
+            .hours-card-header-text {
+                font-size: var(--fs-sm);
+                color: var(--text-light);
+                font-weight: 500;
+            }
+
+            .hours-phone-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.5rem 1.125rem;
+                background-color: var(--accent-light);
+                border-radius: var(--radius-full);
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+            }
+
+            .hours-phone-btn:hover {
+                background-color: #eedad0;
+            }
+
+            .hours-phone-btn svg {
+                width: 14px;
+                height: 14px;
+                flex-shrink: 0;
+                color: var(--accent);
+            }
+
+            .hours-phone-number {
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 600;
+                color: var(--accent);
+                letter-spacing: 0.02em;
+                line-height: 1;
+            }
+
+            /* Scrollable wrapper */
+            .hours-table-wrap {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* Table */
+            .hours-table {
+                width: 100%;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+
+            .hours-table thead th {
+                padding: 0.5rem 0.25rem;
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-sm);
+                font-weight: 500;
+                color: var(--text-muted);
+                text-align: center;
+                border-bottom: 1px solid var(--border);
+                white-space: nowrap;
+            }
+
+            .hours-table thead th:first-child {
+                text-align: left;
+                padding-left: 0.875rem;
+                width: 5rem;
+            }
+
+            .hours-table thead th.sat {
+                color: var(--primary);
+            }
+
+            .hours-table thead th.sun {
+                color: var(--danger);
+            }
+
+            .hours-table tbody tr {
+                border-bottom: 1px solid var(--border-light);
+            }
+
+            .hours-table tbody tr:last-child {
+                border-bottom: none;
+            }
+
+            .hours-table tbody td {
+                padding: 0.5rem 0.25rem;
+                text-align: center;
+                font-size: var(--fs-sm);
+                vertical-align: middle;
+            }
+
+            .session-label {
+                text-align: left !important;
+                padding-left: 0.875rem !important;
+            }
+
+            .session-label .session-name {
+                display: block;
+                font-weight: 500;
+                color: var(--text);
+                line-height: 1.3;
+            }
+
+            .session-label .session-time {
+                display: block;
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+                margin-top: 2px;
+            }
+
+            /* Footer note */
+            .hours-note {
+                padding: 0.875rem 1.5rem;
+                border-top: 1px solid var(--border-light);
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+                line-height: 1.7;
+            }
+
+            /* ============================================================
+       13. NEWS
+    ============================================================ */
+            #news {
+                padding-block: var(--section-pad);
+                padding-top: 0;
+                background-color: var(--warm-white);
+            }
+
+            .news-header {
+                margin-bottom: 2rem;
+            }
+
+            .news-list {
+                background: var(--white);
+                border: 1px solid var(--border);
+                border-radius: var(--radius-xl);
+                box-shadow: var(--shadow-sm);
+                overflow: hidden;
+                max-width: 700px;
+                margin-inline: auto;
+            }
+
+            .news-item {
+                display: flex;
+                align-items: baseline;
+                gap: 1rem;
+                padding: 1rem 1.5rem;
+                border-bottom: 1px solid var(--border-light);
+                transition: background-color 0.2s ease;
+            }
+
+            .news-item:last-child {
+                border-bottom: none;
+            }
+
+            .news-item:hover {
+                background-color: var(--primary-lighter);
+            }
+
+            .news-meta {
+                display: flex;
+                align-items: center;
+                gap: 0.625rem;
+                flex-shrink: 0;
+                min-width: 160px;
+            }
+
+            .news-date {
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+                letter-spacing: 0.04em;
+            }
+
+            .news-tag {
+                font-size: var(--fs-xs);
+                font-weight: 500;
+                border-radius: var(--radius-sm);
+                padding: 0.2rem 0.6rem;
+                color: var(--primary);
+                background-color: var(--primary-lighter);
+                white-space: nowrap;
+            }
+
+            .news-tag--important {
+                color: var(--danger);
+                background-color: #fdf0ef;
+            }
+
+            .news-title-link {
+                font-size: var(--fs-sm);
+                color: var(--text);
+                line-height: 1.6;
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            .news-title-link:hover {
+                color: var(--primary);
+                text-decoration: underline;
+                text-decoration-color: var(--primary-lighter);
+            }
+
+            /* ============================================================
+       14. MESSAGE
+    ============================================================ */
+            #message {
+                padding-block: var(--section-pad);
+                background-color: var(--cream);
+            }
+
+            .message-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .message-card {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                background: var(--white);
+                border: 1px solid var(--border-light);
+                border-radius: var(--radius-lg);
+                box-shadow: var(--shadow);
+                padding: 2rem;
+                max-width: 900px;
+                margin-inline: auto;
+            }
+
+            .message-photo {
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .message-photo-frame {
+                width: 100%;
+                max-width: 240px;
+                aspect-ratio: 3 / 4;
+                border-radius: var(--radius-xl);
+                background-color: var(--primary-lighter);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                color: var(--text-muted);
+            }
+
+            .message-photo-frame svg {
+                width: 48px;
+                height: 48px;
+                opacity: 0.45;
+            }
+
+            .message-photo-frame span {
+                font-size: var(--fs-xs);
+                letter-spacing: 0.05em;
+            }
+
+            .message-signature {
+                text-align: center;
+            }
+
+            .message-role {
+                display: block;
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin-bottom: 0.25rem;
+            }
+
+            .message-name {
+                display: block;
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 700;
+                color: var(--text);
+            }
+
+            .message-body {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .message-lead {
+                font-size: var(--fs-md);
+                font-weight: 500;
+                color: var(--text);
+                line-height: 2;
+                margin-bottom: 1.25rem;
+            }
+
+            .message-body p {
+                font-size: var(--fs-base);
+                color: var(--text-light);
+                line-height: 2;
+                margin-bottom: 1rem;
+            }
+
+            .message-body p:last-child {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 769px) {
+                .message-card {
+                    flex-direction: row;
+                    gap: 3rem;
+                    padding: 2.5rem;
+                }
+
+                .message-photo {
+                    width: 240px;
+                }
+
+                .message-photo-frame {
+                    max-width: 100%;
+                }
+            }
+
+            /* ============================================================
+       15. SERVICES
+    ============================================================ */
+            #services {
+                padding-block: var(--section-pad);
+                background-color: var(--warm-white);
+            }
+
+            .services-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .services-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .service-card {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                background: var(--white);
+                border: 1px solid var(--border-light);
+                border-radius: var(--radius-lg);
+                padding: 1.75rem;
+                overflow: hidden;
+                transition:
+                    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                    border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+                cursor: default;
+            }
+
+            /* Top accent bar */
+            .service-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: linear-gradient(90deg, var(--primary), var(--primary-light));
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .service-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow-lg);
+                border-color: var(--primary-lighter);
+            }
+
+            .service-card:hover::before {
+                transform: scaleX(1);
+            }
+
+            .service-icon-wrap {
+                width: 52px;
+                height: 52px;
+                border-radius: var(--radius);
+                background-color: var(--primary-lighter);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.25rem;
+                flex-shrink: 0;
+                transition:
+                    background-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .service-icon-wrap svg {
+                width: 26px;
+                height: 26px;
+                stroke: var(--primary);
+                transition: stroke 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .service-card:hover .service-icon-wrap {
+                background-color: var(--primary);
+            }
+
+            .service-card:hover .service-icon-wrap svg {
+                stroke: var(--white);
+            }
+
+            .service-name {
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-md);
+                font-weight: 700;
+                color: var(--text);
+                margin-bottom: 0.5rem;
+                line-height: 1.4;
+            }
+
+            .service-desc {
+                font-size: var(--fs-sm);
+                color: var(--text-light);
+                line-height: 1.8;
+                flex: 1;
+            }
+
+            .service-arrow {
+                display: inline-block;
+                font-size: var(--fs-xs);
+                font-weight: 600;
+                color: var(--primary-dark);
+                margin-top: 1.25rem;
+                opacity: 0;
+                transform: translateX(-4px);
+                transition:
+                    opacity 0.3s ease,
+                    transform 0.3s ease;
+            }
+
+            .service-card:hover .service-arrow {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            @media (min-width: 640px) {
+                .services-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (min-width: 960px) {
+                .services-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            /* ============================================================
+       16. CTA BANNER
+    ============================================================ */
+            .cta-banner {
+                padding-block: var(--section-pad);
+                background: linear-gradient(135deg, var(--primary-deep), var(--primary-dark));
+                text-align: center;
+            }
+
+            .cta-content {
+                max-width: 640px;
+                margin-inline: auto;
+            }
+
+            .cta-banner .section-label {
+                color: rgba(255, 255, 255, 0.65);
+            }
+
+            .cta-banner .section-label::before {
+                background-color: rgba(255, 255, 255, 0.45);
+            }
+
+            .cta-title {
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-2xl);
+                font-weight: 700;
+                color: var(--white);
+                line-height: 1.45;
+                margin-block: 0.75rem 1rem;
+            }
+
+            .cta-subtitle {
+                font-size: var(--fs-base);
+                color: rgba(255, 255, 255, 0.8);
+                line-height: 1.9;
+                margin-bottom: 2rem;
+            }
+
+            .cta-actions {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            /* Primary CTA button — accent/terracotta */
+            .btn-primary {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: var(--accent);
+                color: var(--white);
+                font-size: var(--fs-base);
+                font-weight: 600;
+                border-radius: var(--radius-full);
+                padding: 0.875rem 2rem;
+                text-decoration: none;
+                box-shadow: var(--shadow-accent);
+                transition:
+                    background-color 0.2s ease,
+                    transform 0.2s ease,
+                    box-shadow 0.2s ease;
+                white-space: nowrap;
+            }
+
+            .btn-primary svg {
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+                transition: transform 0.2s ease;
+            }
+
+            .btn-primary:hover {
+                background-color: var(--accent-hover);
+                transform: translateY(-1px);
+                box-shadow: 0 12px 36px rgba(212, 132, 90, 0.35);
+            }
+
+            .btn-primary:hover svg {
+                transform: translateX(3px);
+            }
+
+            /* Secondary button on dark background */
+            .btn-on-dark {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: rgba(255, 255, 255, 0.12);
+                color: var(--white);
+                font-size: var(--fs-base);
+                font-weight: 600;
+                border-radius: var(--radius-full);
+                border: 1.5px solid rgba(255, 255, 255, 0.3);
+                padding: 0.875rem 2rem;
+                text-decoration: none;
+                transition:
+                    background-color 0.2s ease,
+                    border-color 0.2s ease;
+                white-space: nowrap;
+            }
+
+            .btn-on-dark svg {
+                width: 18px;
+                height: 18px;
+                flex-shrink: 0;
+                stroke: var(--white);
+            }
+
+            .btn-on-dark:hover {
+                background-color: rgba(255, 255, 255, 0.22);
+                border-color: rgba(255, 255, 255, 0.5);
+            }
+
+            /* ============================================================
+       17. FEATURES
+    ============================================================ */
+            #features {
+                padding-block: var(--section-pad);
+                background-color: var(--cream);
+            }
+
+            .features-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .features-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .feature-card {
+                display: flex;
+                flex-direction: column;
+                background: var(--white);
+                border: 1px solid var(--border-light);
+                border-radius: var(--radius-lg);
+                overflow: hidden;
+                transition:
+                    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+                    border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .feature-card:hover {
+                transform: translateY(-4px);
+                box-shadow: var(--shadow);
+                border-color: var(--primary-lighter);
+            }
+
+            .feature-img {
+                aspect-ratio: 16 / 10;
+                background: linear-gradient(
+                    135deg,
+                    var(--primary-lighter),
+                    rgba(90, 171, 191, 0.15)
+                );
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+
+            .feature-img svg {
+                width: 48px;
+                height: 48px;
+                stroke: var(--primary);
+                opacity: 0.5;
+            }
+
+            .feature-body {
+                padding: 1.5rem;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .feature-point {
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin-bottom: 0.5rem;
+            }
+
+            .feature-point span {
+                font-size: 0.875rem;
+                font-weight: 700;
+                color: var(--primary);
+            }
+
+            .feature-title {
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 700;
+                color: var(--text);
+                line-height: 1.4;
+                margin-bottom: 0.75rem;
+            }
+
+            .feature-desc {
+                font-size: var(--fs-sm);
+                color: var(--text-light);
+                line-height: 1.9;
+                flex: 1;
+            }
+
+            @media (min-width: 769px) {
+                .features-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+
+            /* ============================================================
+       18. ACCESS
+    ============================================================ */
+            #access {
+                padding-block: var(--section-pad);
+                background-color: var(--warm-white);
+            }
+
+            .access-header {
+                margin-bottom: 2.5rem;
+            }
+
+            .access-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 2.5rem;
+                align-items: flex-start;
+            }
+
+            /* ── Left column: info ── */
+            .access-info {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                flex: 1;
+                width: 100%;
+            }
+
+            .access-phone {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                background-color: var(--accent-light);
+                border-radius: var(--radius-lg);
+                padding: 1.25rem 1.5rem;
+                text-decoration: none;
+                box-shadow: var(--shadow-sm);
+                transition: background-color 0.2s ease;
+            }
+
+            .access-phone:hover {
+                background-color: #efd8cb;
+            }
+
+            .access-phone-icon {
+                flex-shrink: 0;
+                width: 28px;
+                height: 28px;
+                stroke: var(--accent);
+            }
+
+            .access-phone-label {
+                display: block;
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+                margin-bottom: 0.2rem;
+            }
+
+            .access-phone-number {
+                display: block;
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xl);
+                font-weight: 700;
+                color: var(--accent);
+                letter-spacing: -0.02em;
+                line-height: 1.2;
+            }
+
+            .access-table {
+                background: var(--white);
+                border: 1px solid var(--border);
+                border-radius: var(--radius-lg);
+                overflow: hidden;
+                box-shadow: var(--shadow-sm);
+            }
+
+            .access-row {
+                display: flex;
+                align-items: flex-start;
+                padding: 0.875rem 1.25rem;
+                border-bottom: 1px solid var(--border-light);
+            }
+
+            .access-row:last-child {
+                border-bottom: none;
+            }
+
+            .access-row dt {
+                font-size: var(--fs-xs);
+                font-weight: 600;
+                color: var(--text-muted);
+                min-width: 72px;
+                flex-shrink: 0;
+                padding-top: 0.15rem;
+            }
+
+            .access-row dd {
+                font-size: var(--fs-sm);
+                color: var(--text);
+                line-height: 1.7;
+            }
+
+            .access-postal {
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xs);
+                color: var(--text-muted);
+            }
+
+            /* ── Right column: map ── */
+            .access-map-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                flex: 1;
+                width: 100%;
+            }
+
+            .access-map {
+                border-radius: var(--radius-xl);
+                aspect-ratio: 4 / 3;
+                background-color: var(--primary-lighter);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                color: var(--text-muted);
+            }
+
+            .access-map svg {
+                width: 48px;
+                height: 48px;
+                stroke: var(--primary);
+                opacity: 0.45;
+            }
+
+            .access-map span {
+                font-size: var(--fs-xs);
+                letter-spacing: 0.05em;
+            }
+
+            .access-map-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.35rem;
+                font-size: var(--fs-xs);
+                font-weight: 500;
+                color: var(--primary);
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            .access-map-link:hover {
+                color: var(--primary-dark);
+                text-decoration: underline;
+            }
+
+            .access-map-link svg {
+                width: 13px;
+                height: 13px;
+                stroke: currentColor;
+                flex-shrink: 0;
+            }
+
+            @media (min-width: 769px) {
+                .access-grid {
+                    flex-direction: row;
+                }
+
+                .access-info,
+                .access-map-wrap {
+                    width: auto;
+                }
+            }
+
+            /* ============================================================
+       19. FOOTER
+    ============================================================ */
+            #site-footer {
+                background-color: var(--text);
+                padding-block: 3.5rem 2.5rem;
+                padding-bottom: 7rem; /* mobile: clear sticky bar */
+            }
+
+            .footer-inner {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                padding-bottom: 2.5rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            }
+
+            /* Brand column */
+            .footer-logo {
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .footer-logo-name {
+                display: block;
+                font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+                font-size: var(--fs-lg);
+                font-weight: 700;
+                color: var(--white);
+                line-height: 1.3;
+                transition: color 0.2s ease;
+            }
+
+            .footer-logo:hover .footer-logo-name {
+                color: var(--primary-light);
+            }
+
+            .footer-logo-specialty {
+                display: block;
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.55);
+                margin-top: 0.2rem;
+            }
+
+            .footer-address {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.55);
+                line-height: 1.8;
+                margin-top: 1rem;
+                font-style: normal;
+            }
+
+            /* Nav column */
+            .footer-nav ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                margin-top: 0.25rem;
+            }
+
+            .footer-nav a {
+                font-size: var(--fs-sm);
+                color: rgba(255, 255, 255, 0.75);
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            .footer-nav a:hover {
+                color: var(--white);
+            }
+
+            /* Contact column */
+            .footer-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-tel-label {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.55);
+                margin-bottom: 0.25rem;
+            }
+
+            .footer-tel {
+                font-family: 'DM Sans', sans-serif;
+                font-size: var(--fs-xl);
+                font-weight: 700;
+                color: var(--accent);
+                text-decoration: none;
+                line-height: 1.2;
+                transition: color 0.2s ease;
+            }
+
+            .footer-tel:hover {
+                color: var(--accent-hover);
+            }
+
+            .footer-hours-note {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.5);
+                margin-block: 0.4rem 1rem;
+            }
+
+            /* Footer bottom bar */
+            .footer-bottom {
+                padding-top: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .footer-bottom small {
+                font-size: var(--fs-xs);
+                color: rgba(255, 255, 255, 0.4);
+            }
+
+            @media (min-width: 769px) {
+                #site-footer {
+                    padding-bottom: 2.5rem; /* no sticky bar on desktop */
+                }
+
+                .footer-inner {
+                    grid-template-columns: 1.4fr 1fr 1.4fr;
+                    gap: 2.5rem 3rem;
+                }
+            }
+
+            /* ============================================================
+       20. STICKY BAR
+    ============================================================ */
+            .sticky-bar {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                border-top: 1px solid var(--border);
+                box-shadow: 0 -4px 16px rgba(44, 62, 64, 0.08);
+                padding: 0.75rem 1rem;
+                padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+                display: flex;
+                gap: 0.75rem;
+                z-index: 900;
+            }
+
+            .sticky-phone {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                background-color: var(--primary-lighter);
+                border-radius: var(--radius-full);
+                padding: 0.75rem;
+                color: var(--primary);
+                font-size: var(--fs-sm);
+                font-weight: 600;
+                text-decoration: none;
+                transition: background-color 0.2s ease;
+                white-space: nowrap;
+            }
+
+            .sticky-phone:hover {
+                background-color: #d4eaf0;
+            }
+
+            .sticky-phone svg {
+                width: 16px;
+                height: 16px;
+                stroke: var(--primary);
+                flex-shrink: 0;
+            }
+
+            .sticky-book {
+                flex: 1;
+                justify-content: center;
+            }
+
+            @media (min-width: 769px) {
+                .sticky-bar {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ============================================================
+       HEADER
+  ============================================================ -->
+        <header id="site-header" aria-label="サイトヘッダー">
+            <div class="container header-inner">
+                <!-- Logo -->
+                <a
+                    class="header-logo"
+                    href="#"
+                    aria-label="皆川クリニック トップページへ"
+                >
+                    <span class="logo-name">皆川クリニック</span>
+                    <span class="logo-specialty">内科・消化器内科</span>
+                </a>
+
+                <!-- Desktop navigation -->
+                <nav class="header-nav" aria-label="メインナビゲーション">
+                    <ul class="nav-links">
+                        <li><a href="#services">診療案内</a></li>
+                        <li><a href="#hours">診療時間</a></li>
+                        <li><a href="#news">お知らせ</a></li>
+                        <li><a href="#message">院長ご挨拶</a></li>
+                        <li><a href="#access">アクセス</a></li>
+                    </ul>
+                    <a
+                        href="tel:072-876-0766"
+                        class="header-phone"
+                        aria-label="電話番号 072-876-0766"
+                    >
+                        <!-- Phone icon -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
+                            />
+                        </svg>
+                        072-876-0766
+                    </a>
+                    <a
+                        href="#"
+                        class="btn-primary"
+                        aria-label="WEB予約ページへ"
+                    >
+                        WEB予約はこちら
+                        <!-- Arrow icon -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </nav>
+
+                <!-- Hamburger (mobile only) -->
+                <button
+                    class="hamburger"
+                    aria-expanded="false"
+                    aria-label="メニューを開く"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- ============================================================
+       MOBILE MENU OVERLAY
+  ============================================================ -->
+        <div
+            id="mobile-menu"
+            class="mobile-menu"
+            role="dialog"
+            aria-label="ナビゲーションメニュー"
+            aria-modal="true"
+            hidden
+        >
+            <button class="mobile-menu-close" aria-label="メニューを閉じる">
+                ✕
+            </button>
+
+            <nav aria-label="モバイルナビゲーション">
+                <ul class="mobile-nav-links">
+                    <li><a href="#services">診療案内</a></li>
+                    <li><a href="#hours">診療時間</a></li>
+                    <li><a href="#news">お知らせ</a></li>
+                    <li><a href="#message">院長ご挨拶</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                </ul>
+            </nav>
+
+            <a
+                href="tel:072-876-0766"
+                class="mobile-menu-phone"
+                aria-label="電話番号 072-876-0766"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
+                    />
+                </svg>
+                072-876-0766
+            </a>
+
+            <a href="#" class="btn-primary" aria-label="WEB予約ページへ">
+                WEB予約はこちら
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- ============================================================
+       HERO
+  ============================================================ -->
+        <section id="hero" aria-label="メインビジュアル">
+            <div class="container hero-inner">
+                <!-- Text content -->
+                <div class="hero-content stagger">
+                    <div class="hero-badge reveal">
+                        <span class="hero-badge-dot"></span>
+                        地域のかかりつけ医 &nbsp;·&nbsp; 大阪府
+                    </div>
+
+                    <h1 class="hero-headline reveal">
+                        あなたとご家族の<br class="hidden-sp" />
+                        健康を、ともに守る
+                    </h1>
+
+                    <p class="hero-subtitle reveal">
+                        内科・消化器内科を専門とする皆川クリニックでは、<br
+                            class="hidden-sp"
+                        />
+                        丁寧な診察と分かりやすい説明を心がけています。
+                    </p>
+
+                    <div class="hero-tags reveal">
+                        <span class="hero-tag">内科</span>
+                        <span class="hero-tag">消化器内科</span>
+                        <span class="hero-tag">健康診断</span>
+                        <span class="hero-tag">生活習慣病</span>
+                    </div>
+
+                    <div class="hero-actions reveal">
+                        <a
+                            href="#"
+                            class="btn-primary"
+                            aria-label="WEB予約ページへ"
+                        >
+                            WEB予約はこちら
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                        <a
+                            href="tel:072-876-0766"
+                            class="btn-secondary"
+                            aria-label="電話番号 072-876-0766 に電話する"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"
+                                />
+                            </svg>
+                            072-876-0766
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image frame — replace inner content with <img> in production -->
+                <div
+                    class="hero-image-frame reveal"
+                    style="transition-delay: 0.2s"
+                    aria-hidden="true"
+                >
+                    <div class="hero-image-placeholder">
+                        <!-- Building icon placeholder -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <rect x="2" y="7" width="20" height="15" rx="2" />
+                            <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                            <line x1="12" y1="12" x2="12" y2="12" />
+                            <path
+                                d="M9 12h.01M12 12h.01M15 12h.01M9 16h.01M12 16h.01M15 16h.01"
+                            />
+                        </svg>
+                        <span>クリニック外観写真</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+       HOURS
+  ============================================================ -->
+        <section id="hours" aria-labelledby="hours-title">
+            <div class="container">
+
+                <div class="hours-header reveal">
+                    <div class="section-label">Hours</div>
+                    <h2 id="hours-title" class="section-title">診療時間</h2>
+                    <p class="section-subtitle">受付は診療終了の30分前までとなります。お気軽にお電話ください。</p>
+                </div>
+
+                <div class="hours-card reveal" style="transition-delay: 0.1s;">
+
+                    <!-- Card header with phone CTA -->
+                    <div class="hours-card-header">
+                        <p class="hours-card-header-text">ご予約・お問い合わせ</p>
+                        <a
+                            href="tel:072-876-0766"
+                            class="hours-phone-btn"
+                            aria-label="電話番号 072-876-0766 に電話する"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
+                            </svg>
+                            <span class="hours-phone-number">072-876-0766</span>
+                        </a>
+                    </div>
+
+                    <!-- Hours table -->
+                    <div
+                        class="hours-table-wrap"
+                        role="region"
+                        aria-label="診療時間表"
+                        tabindex="0"
+                    >
+                        <table class="hours-table" role="table" aria-label="診療時間">
+                            <thead>
+                                <tr>
+                                    <th scope="col">診療時間</th>
+                                    <th scope="col">月</th>
+                                    <th scope="col">火</th>
+                                    <th scope="col">水</th>
+                                    <th scope="col">木</th>
+                                    <th scope="col">金</th>
+                                    <th scope="col" class="sat">土</th>
+                                    <th scope="col" class="sun">日<span class="hidden-sp">・祝</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="session-label">
+                                        <span class="session-name">午前</span>
+                                        <span class="session-time">9:00〜12:30</span>
+                                    </td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-closed" role="img" aria-label="休診"></span></td>
+                                </tr>
+                                <tr>
+                                    <td class="session-label">
+                                        <span class="session-name">午後</span>
+                                        <span class="session-time">16:00〜19:00</span>
+                                    </td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-open" role="img" aria-label="診療あり"></span></td>
+                                    <td><span class="dot-closed" role="img" aria-label="休診"></span></td>
+                                    <td><span class="dot-closed" role="img" aria-label="休診"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="hours-note">
+                        <strong>受付時間：</strong>午前 8:30〜12:30　／　午後 15:30〜19:00<br>
+                        ※ 診療時間・休診日は変更になる場合がありますので、事前にお電話でご確認ください。
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+       NEWS
+  ============================================================ -->
+        <section id="news" aria-labelledby="news-title">
+            <div class="container">
+
+                <div class="news-header reveal">
+                    <div class="section-label">News</div>
+                    <h2 id="news-title" class="section-title">お知らせ</h2>
+                </div>
+
+                <div class="news-list stagger" role="feed" aria-label="お知らせ一覧">
+
+                    <article class="news-item reveal">
+                        <div class="news-meta">
+                            <time class="news-date" datetime="2026-03-28">2026.03.28</time>
+                            <span class="news-tag news-tag--important">重要</span>
+                        </div>
+                        <a href="#" class="news-title-link">年末年始の休診についてのご案内</a>
+                    </article>
+
+                    <article class="news-item reveal">
+                        <div class="news-meta">
+                            <time class="news-date" datetime="2026-03-10">2026.03.10</time>
+                            <span class="news-tag">お知らせ</span>
+                        </div>
+                        <a href="#" class="news-title-link">インフルエンザ予防接種のご予約を受け付けています</a>
+                    </article>
+
+                    <article class="news-item reveal">
+                        <div class="news-meta">
+                            <time class="news-date" datetime="2026-02-14">2026.02.14</time>
+                            <span class="news-tag">お知らせ</span>
+                        </div>
+                        <a href="#" class="news-title-link">胃カメラ（上部消化管内視鏡）検査のご案内を更新しました</a>
+                    </article>
+
+                    <article class="news-item reveal">
+                        <div class="news-meta">
+                            <time class="news-date" datetime="2026-01-06">2026.01.06</time>
+                            <span class="news-tag">お知らせ</span>
+                        </div>
+                        <a href="#" class="news-title-link">新年のご挨拶・年始の診療開始日について</a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       MESSAGE
+  ============================================================ -->
+        <section id="message" aria-labelledby="message-title">
+            <div class="container">
+
+                <div class="message-header reveal">
+                    <div class="section-label">Message</div>
+                    <h2 id="message-title" class="section-title">院長ご挨拶</h2>
+                </div>
+
+                <div class="message-card reveal">
+
+                    <div class="message-photo">
+                        <div class="message-photo-frame" aria-label="院長写真（準備中）">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            <span>写真準備中</span>
+                        </div>
+                        <div class="message-signature">
+                            <span class="message-role">Director</span>
+                            <span class="message-name">皆川 ○○</span>
+                        </div>
+                    </div>
+
+                    <div class="message-body">
+                        <p class="message-lead">「気軽に相談できる、地域のかかりつけ医」でありたいと思っています。</p>
+                        <p>当クリニックは、内科・消化器内科を専門とする地域密着型のクリニックです。風邪や発熱などの一般的な内科疾患から、胃腸の不調・逆流性食道炎・大腸ポリープなど消化器系の疾患まで、幅広く診療しております。</p>
+                        <p>「なんとなく体の調子が悪い」「症状は軽いけれど心配」そのような些細なことでも、どうかお気軽にご相談ください。患者さまのお話にしっかりと耳を傾け、丁寧な説明と検査・治療を心がけております。</p>
+                        <p>大病院への紹介が必要な場合は、適切な医療機関へのスムーズな連携も行っております。地域の皆さまが安心して長く通えるクリニックを目指して、スタッフ一同、誠心誠意努めてまいります。</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+        <section id="services" aria-labelledby="services-title">
+            <div class="container">
+
+                <div class="services-header reveal">
+                    <div class="section-label">Services</div>
+                    <h2 id="services-title" class="section-title">診療案内</h2>
+                    <p class="section-subtitle">内科・消化器内科を中心に、地域の皆さまの健康をトータルにサポートします。</p>
+                </div>
+
+                <div class="services-grid stagger">
+
+                    <!-- 1. 内科 -->
+                    <article class="service-card reveal">
+                        <div class="service-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
+                                <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/>
+                                <circle cx="20" cy="10" r="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-name">内科</h3>
+                        <p class="service-desc">風邪・発熱・咳・倦怠感など、日常的な症状から慢性疾患の管理まで幅広く対応します。</p>
+                        <span class="service-arrow" aria-hidden="true">詳しく見る →</span>
+                    </article>
+
+                    <!-- 2. 消化器内科 -->
+                    <article class="service-card reveal">
+                        <div class="service-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M8 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"/>
+                                <path d="M14 9c.55 0 1 .45 1 1v4c0 .55-.45 1-1 1"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-name">消化器内科</h3>
+                        <p class="service-desc">胃もたれ・腹痛・逆流性食道炎・過敏性腸症候群など、消化器系の幅広い症状を診療します。</p>
+                        <span class="service-arrow" aria-hidden="true">詳しく見る →</span>
+                    </article>
+
+                    <!-- 3. 胃カメラ -->
+                    <article class="service-card reveal">
+                        <div class="service-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="13" r="3"/>
+                                <path d="M5 7h1a2 2 0 0 0 2-2 1 1 0 0 1 1-1h6a1 1 0 0 1 1 1 2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-name">胃カメラ検査</h3>
+                        <p class="service-desc">上部消化管内視鏡により、食道・胃・十二指腸を直接観察。胃潰瘍・ピロリ菌・早期がんの発見に有効です。</p>
+                        <span class="service-arrow" aria-hidden="true">詳しく見る →</span>
+                    </article>
+
+                    <!-- 4. 大腸カメラ -->
+                    <article class="service-card reveal">
+                        <div class="service-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M2 12c0 5.52 4.48 10 10 10a10 10 0 0 0 0-20C6.48 2 2 6.48 2 12z"/>
+                                <path d="M12 7v5l3 3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-name">大腸カメラ検査</h3>
+                        <p class="service-desc">下部消化管内視鏡で大腸全体を観察。大腸ポリープ・大腸がんの早期発見・日帰りポリープ切除にも対応します。</p>
+                        <span class="service-arrow" aria-hidden="true">詳しく見る →</span>
+                    </article>
+
+                    <!-- 5. 生活習慣病 -->
+                    <article class="service-card reveal">
+                        <div class="service-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-name">生活習慣病</h3>
+                        <p class="service-desc">高血圧・糖尿病・脂質異常症・高尿酸血症など、長期的な管理と生活指導で合併症を予防します。</p>
+                        <span class="service-arrow" aria-hidden="true">詳しく見る →</span>
+                    </article>
+
+                    <!-- 6. 健診・予防接種 -->
+                    <article class="service-card reveal">
+                        <div class="service-icon-wrap">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="m18 2 4 4"/>
+                                <path d="m17 7 3-3"/>
+                                <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/>
+                                <path d="m9 11 4 4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-name">健診・予防接種</h3>
+                        <p class="service-desc">各種健康診断（一般・雇用時・定期）やインフルエンザ・肺炎球菌などの予防接種を行っております。</p>
+                        <span class="service-arrow" aria-hidden="true">詳しく見る →</span>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       CTA BANNER
+  ============================================================ -->
+        <section class="cta-banner" aria-labelledby="cta-banner-title">
+            <div class="container">
+                <div class="cta-content reveal">
+
+                    <div class="section-label">Web Reservation</div>
+                    <h2 id="cta-banner-title" class="cta-title">
+                        お気軽にご予約・<br class="hidden-sp">ご相談ください
+                    </h2>
+                    <p class="cta-subtitle">
+                        初診の方もお電話・WEBからご予約いただけます。<br>
+                        診療についてのご不明点もお気軽にお問い合わせください。
+                    </p>
+
+                    <div class="cta-actions">
+                        <a href="#" class="btn-primary">
+                            WEB予約はこちら
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="tel:072-876-0766" class="btn-on-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            072-876-0766
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+       FEATURES
+  ============================================================ -->
+        <section id="features" aria-labelledby="features-title">
+            <div class="container">
+
+                <div class="features-header reveal">
+                    <div class="section-label">Features</div>
+                    <h2 id="features-title" class="section-title">当院の特徴</h2>
+                    <p class="section-subtitle">患者さまに選ばれる3つの理由をご紹介します。</p>
+                </div>
+
+                <div class="features-grid stagger">
+
+                    <!-- POINT 01 -->
+                    <article class="feature-card reveal">
+                        <div class="feature-img" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="13" r="3"/>
+                                <path d="M5 7h1a2 2 0 0 0 2-2 1 1 0 0 1 1-1h6a1 1 0 0 1 1 1 2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-body">
+                            <div class="feature-point">POINT <span>01</span></div>
+                            <h3 class="feature-title">専門性の高い消化器内科</h3>
+                            <p class="feature-desc">胃・大腸カメラを中心とした内視鏡検査と消化器疾患の専門的な診療を提供します。苦痛の少ない検査を心がけ、日帰りでのポリープ切除にも対応しています。</p>
+                        </div>
+                    </article>
+
+                    <!-- POINT 02 -->
+                    <article class="feature-card reveal">
+                        <div class="feature-img" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-body">
+                            <div class="feature-point">POINT <span>02</span></div>
+                            <h3 class="feature-title">丁寧な説明と相談しやすい環境</h3>
+                            <p class="feature-desc">患者さまのお話にじっくり耳を傾け、わかりやすい言葉でご説明します。「些細なことでも気軽に相談できる」そんなクリニックを目指しています。</p>
+                        </div>
+                    </article>
+
+                    <!-- POINT 03 -->
+                    <article class="feature-card reveal">
+                        <div class="feature-img" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <div class="feature-body">
+                            <div class="feature-point">POINT <span>03</span></div>
+                            <h3 class="feature-title">地域医療との連携</h3>
+                            <p class="feature-desc">必要に応じて大病院への紹介をスムーズに行います。地域のかかりつけ医として、患者さまの健康を長期的にサポートします。</p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       ACCESS
+  ============================================================ -->
+        <section id="access" aria-labelledby="access-title">
+            <div class="container">
+
+                <div class="access-header reveal">
+                    <div class="section-label">Access</div>
+                    <h2 id="access-title" class="section-title">アクセス</h2>
+                    <p class="section-subtitle">お気軽にお越しください。お電話でのご予約もお待ちしております。</p>
+                </div>
+
+                <div class="access-grid reveal">
+
+                    <!-- Left: info -->
+                    <div class="access-info">
+
+                        <a href="tel:072-876-0766" class="access-phone" aria-label="電話番号 072-876-0766 に電話する">
+                            <svg class="access-phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div class="access-phone-text">
+                                <span class="access-phone-label">お電話でのご予約・お問い合わせ</span>
+                                <span class="access-phone-number">072-876-0766</span>
+                            </div>
+                        </a>
+
+                        <dl class="access-table">
+                            <div class="access-row">
+                                <dt>住所</dt>
+                                <dd>
+                                    <span class="access-postal">〒574-0011</span><br>
+                                    大阪府大東市北条１－５－３０
+                                </dd>
+                            </div>
+                            <div class="access-row">
+                                <dt>最寄駅</dt>
+                                <dd>○○線「○○」駅 徒歩○分</dd>
+                            </div>
+                            <div class="access-row">
+                                <dt>駐車場</dt>
+                                <dd>駐車場○台あり（無料）</dd>
+                            </div>
+                            <div class="access-row">
+                                <dt>休診日</dt>
+                                <dd>日曜・祝日・木曜午後</dd>
+                            </div>
+                        </dl>
+
+                    </div>
+
+                    <!-- Right: map -->
+                    <div class="access-map-wrap">
+                        <div class="access-map" aria-label="クリニックの地図（準備中）">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>地図準備中</span>
+                        </div>
+                        <a href="#" class="access-map-link" aria-label="Google Mapsでクリニックの場所を見る（別タブで開く）" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Google Mapsで見る
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+        <footer id="site-footer" aria-label="サイトフッター">
+            <div class="container">
+                <div class="footer-inner">
+
+                    <!-- Col 1: Brand -->
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo" aria-label="皆川クリニック トップページへ">
+                            <span class="footer-logo-name">皆川クリニック</span>
+                            <span class="footer-logo-specialty">内科・消化器内科</span>
+                        </a>
+                        <address class="footer-address">
+                            〒574-0011<br>
+                            大阪府大東市北条１－５－３０
+                        </address>
+                    </div>
+
+                    <!-- Col 2: Nav -->
+                    <nav class="footer-nav" aria-label="フッターナビゲーション">
+                        <ul>
+                            <li><a href="#services">診療案内</a></li>
+                            <li><a href="#hours">診療時間</a></li>
+                            <li><a href="#news">お知らせ</a></li>
+                            <li><a href="#message">院長ご挨拶</a></li>
+                            <li><a href="#features">当院の特徴</a></li>
+                            <li><a href="#access">アクセス</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Col 3: Contact -->
+                    <div class="footer-contact">
+                        <p class="footer-tel-label">お電話でのご予約</p>
+                        <a href="tel:072-876-0766" class="footer-tel" aria-label="電話番号 072-876-0766 に電話する">072-876-0766</a>
+                        <p class="footer-hours-note">受付時間：診療時間に準ずる</p>
+                        <a href="#" class="btn-primary">
+                            WEB予約はこちら
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom">
+                    <small>&copy; 2026 皆川クリニック. All rights reserved.</small>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ============================================================
+       STICKY BAR (mobile only)
+  ============================================================ -->
+        <div class="sticky-bar" aria-label="クイックアクセス" role="navigation">
+            <a href="tel:072-876-0766" class="sticky-phone" aria-label="電話番号 072-876-0766 に電話する">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l1.62-1.62a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>072-876-0766</span>
+            </a>
+            <a href="#" class="btn-primary sticky-book">
+                WEB予約はこちら
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+
+        <script>
+            // ============================================================
+            // SCROLL REVEAL — IntersectionObserver
+            // Applies stagger delays to children of .stagger, then
+            // observes all .reveal elements, adding .visible on entry.
+            // ============================================================
+            (function () {
+                // Apply transition-delay to stagger children before observing
+                document.querySelectorAll('.stagger').forEach((parent) => {
+                    parent.querySelectorAll('.reveal').forEach((child, i) => {
+                        child.style.transitionDelay = `${i * 0.08}s`;
+                    });
+                });
+
+                const observer = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    },
+                    { threshold: 0.1, rootMargin: '0px 0px -30px 0px' }
+                );
+
+                document.querySelectorAll('.reveal').forEach((el) => {
+                    observer.observe(el);
+                });
+            })();
+
+            // ============================================================
+            // HEADER: Scroll shadow
+            // ============================================================
+            (function () {
+                const header = document.getElementById('site-header');
+                window.addEventListener(
+                    'scroll',
+                    () => {
+                        header.classList.toggle('scrolled', window.scrollY > 10);
+                    },
+                    { passive: true }
+                );
+            })();
+
+            // ============================================================
+            // HEADER: Mobile menu toggle
+            // ============================================================
+            (function () {
+                const hamburger = document.querySelector('.hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const closeBtn = document.querySelector('.mobile-menu-close');
+
+                if (!hamburger || !mobileMenu) return;
+
+                function openMenu() {
+                    hamburger.classList.add('open');
+                    hamburger.setAttribute('aria-expanded', 'true');
+                    mobileMenu.removeAttribute('hidden');
+                    mobileMenu.classList.add('open');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeMenu() {
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    mobileMenu.setAttribute('hidden', '');
+                    mobileMenu.classList.remove('open');
+                    document.body.style.overflow = '';
+                    hamburger.focus();
+                }
+
+                hamburger.addEventListener('click', () => {
+                    hamburger.getAttribute('aria-expanded') === 'true'
+                        ? closeMenu()
+                        : openMenu();
+                });
+
+                if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                        closeMenu();
+                    }
+                });
+
+                // Close menu when a nav link is tapped
+                mobileMenu.querySelectorAll('a').forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+            })();
+        </script>
+    </body>
+</html>
